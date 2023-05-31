@@ -1,0 +1,23 @@
+.main{
+    padding: 20px;
+}
+
+.main-btns{
+    display: flex;
+    padding: 10px;
+    & button{
+        margin-right: 10px;
+        padding: 10px;
+        border: none;
+
+        &:hover{
+            background-color: #b2b8b4;
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+}
+
+h1{
+    color: blue;
+}

@@ -1,0 +1,19 @@
+<div class="dashboard">
+    <h2>Top Heroes</h2>
+    <ul>
+        <li class="mainHeroes">
+            <a *ngFor="let heroeTop of heroesTop" class="hero" routerLink="/details/{{heroeTop.id}}">
+                {{heroeTop.name}}
+            </a>
+        </li>
+    </ul>
+
+
+    <h3>Hero Search</h3>
+    <input type="text" #searchInput placeholder="enter text for search" (input)="search(searchInput.value)">
+    <ul class="search">
+        <li *ngFor="let hero of heroesFiltered" class="heroSearch">
+            <a routerLink="/details/{{hero.id}}">{{hero.name}}</a>
+        </li>
+    </ul>
+</div>

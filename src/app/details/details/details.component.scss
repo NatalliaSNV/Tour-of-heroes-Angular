@@ -1,0 +1,53 @@
+.details{
+    width: 100%;
+    position: relative;
+}
+
+.wrap{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    & input{
+        padding: 5px;
+    }
+}
+
+.text{
+    font-weight: 400;
+}
+
+h2{
+    margin-bottom: 0;
+    text-align: center;
+}
+
+p{
+    padding: 20px 0px;
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+}
+
+button{
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+
+    &:hover{
+        background-color: #b2b8b4;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+
+.name{
+    margin-right: 10px;
+}

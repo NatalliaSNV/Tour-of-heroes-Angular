@@ -1,0 +1,13 @@
+<div class="details">
+    <div class="wrap">
+        <h2>{{hero.name | uppercase}} <span class="text">Details</span> </h2>
+        <p>id: {{hero.id}}</p>
+        <button (click)="goBack()">BACK</button>
+        <button (click)="save()">SAVE</button>
+    
+        <div class="input">
+            <h4 class="name">Hero name:</h4>
+            <input type="text" [(ngModel)]="hero.name">
+        </div>
+    </div>
+</div>

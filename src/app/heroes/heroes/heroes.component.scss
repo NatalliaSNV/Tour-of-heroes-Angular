@@ -1,0 +1,97 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style-type: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.main-heroes{
+
+}
+
+.title{
+    text-align: center;
+}
+
+.heroes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e9eff5;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+    &:hover{
+        background-color: #b2b8b4;
+        cursor: pointer;
+    }
+}
+.heroesLink{
+    display: flex;
+    align-items: center;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.add-hero{
+    padding: 10px;
+
+    & input{
+        margin: 0 10px;
+    }
+
+    & button{
+        border: none;
+        padding: 10px 20px;
+
+        &:hover{
+            background-color: #b2b8b4;
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.list{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.heroesLink{
+    width: 100%;
+    & .hero-id{
+        margin-right: 10px;
+        background-color: #214870;
+        border-radius: 5px;
+        height: 3rem;
+        color: white;
+        padding: 0 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.heroes{
+    & button{
+        margin-right: 10px;
+        border: none;
+        background-color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}

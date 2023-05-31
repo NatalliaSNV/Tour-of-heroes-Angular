@@ -1,0 +1,66 @@
+.hero{
+    background-color: #2d5c85;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+
+    &:hover{
+        opacity: 0.8;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+}
+
+li{
+    list-style-type: none;
+}
+
+input{
+    box-sizing: border-box;
+    width:50%;
+    padding: 0;
+    padding: 10px;
+
+    &:focus{
+        border: 2.5px solid #2d5c85;
+        outline: none;
+    }
+}
+
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainHeroes{
+    display: flex;
+}
+
+h3{
+    margin-bottom: 10px;
+}
+
+.search{
+    width: 50%;
+}
+
+.heroSearch{
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+}
