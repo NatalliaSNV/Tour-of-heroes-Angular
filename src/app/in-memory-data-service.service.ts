@@ -19,9 +19,6 @@ export class InMemoryDataServiceService implements InMemoryDbService {
             { id: 19, name: 'Magma' },
             { id: 20, name: 'Tornado' }
         ];
-        // for (let hero of heroes) {
-        //     localStorage.setItem(`${hero.id}`, hero.name);
-        // }
         return {heroes};
     }
 

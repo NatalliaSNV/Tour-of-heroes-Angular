@@ -4,7 +4,7 @@
     <div class="add-hero">
         <label for="hero-add">Hero name:</label>
         <input id="hero-add" type="text" #inputAddHero placeholder="Add new hero">
-        <button (click)="addHero(inputAddHero.value)">Add hero</button>
+        <button (click)="addHero(inputAddHero.value)" class="btn-add">Add hero</button>
     </div>
 
     <ul class="list">
@@ -13,7 +13,7 @@
                 <div class="hero-id">{{hero.id}}</div>
                 <p>{{hero.name}}</p>
             </a>
-            <button (click)="deleteHero(hero)">X</button>
+            <button (click)="deleteHero(hero)" class="btn-delete{{hero.id}}">X</button>
         </li>
     </ul>
 

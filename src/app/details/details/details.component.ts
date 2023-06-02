@@ -18,7 +18,6 @@ export class DetailsComponent implements OnInit{
     constructor(
         private route: ActivatedRoute, 
         private heroService: HeroService, 
-        private router: Router,
         private location: Location
     )
     {}

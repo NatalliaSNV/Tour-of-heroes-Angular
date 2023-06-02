@@ -1,7 +1,7 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Hero } from './hero.interface';
-import { Observable, catchError, tap, throwError } from 'rxjs';
+import { Observable, catchError, throwError } from 'rxjs';
 
 @Injectable({
     providedIn: 'root'
@@ -30,8 +30,6 @@ export class HeroService {
     }
 
     updateHero(hero: Hero): Observable<Hero> {
-        // localStorage.removeItem(`${hero.id}`);
-        // localStorage.setItem(`${hero.id}`, hero.name);
         return this.http.put<Hero>(this.heroUrl + `/${hero.id}`, hero).pipe(
           catchError((error: HttpErrorResponse) => {
             console.error(error);
@@ -41,7 +39,6 @@ export class HeroService {
     }
 
     addHero(hero: Hero): Observable<Hero> {
-        // localStorage.setItem(`${hero.id}`, hero.name);
         return this.http.post<Hero>(this.heroUrl, hero).pipe(
           catchError((error: HttpErrorResponse) => {
             console.error(error);
@@ -51,7 +48,6 @@ export class HeroService {
     }
 
     deleteHero(hero: Hero): Observable<Hero> {
-        // localStorage.removeItem(`${hero.id}`);
         return this.http.delete<Hero>(this.heroUrl + `/${hero.id}`).pipe(
           catchError((error: HttpErrorResponse) => {
             console.error(error);

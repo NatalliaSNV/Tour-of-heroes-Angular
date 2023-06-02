@@ -2,8 +2,9 @@
     <div class="wrap">
         <h2>{{hero.name | uppercase}} <span class="text">Details</span> </h2>
         <p>id: {{hero.id}}</p>
-        <button (click)="goBack()">BACK</button>
-        <button (click)="save()">SAVE</button>
+
+        <button (click)="goBack()" class="btn-back">BACK</button>
+        <button (click)="save()" class="btn-save">SAVE</button>
     
         <div class="input">
             <h4 class="name">Hero name:</h4>
